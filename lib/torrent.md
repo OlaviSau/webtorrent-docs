@@ -1,3 +1,28 @@
+# Torrent.prototype.deselect()
+ Deprioritizes a range of previously selected pieces.
+
+### Syntax
+    Torrent.deselect(start,end,priority)
+### Parameters
+   **start {number}**
+   
+   
+   The index at the storage [pieces](https://github.com/feross/webtorrent/blob/master/lib/storage.js#L36) array to start        selecting from.
+   
+   
+   **end {number}**
+   
+   
+   The index at the storage [pieces](https://github.com/feross/webtorrent/blob/master/lib/storage.js#L36) array to end          selecting from.
+   
+   
+   **priority {number}**
+   
+   The priority associated with the selection.
+   
+### Description
+Makes sure the parameters are valid, then searches the _selections array for the matching selection object, and removes it if it finds it.
+### Examples
 # Torrent.prototype.select()
  Select a range of pieces to prioritize.
 
