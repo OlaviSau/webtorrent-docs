@@ -4,7 +4,7 @@ Destroys and cleans up this torrent.
 ### Syntax
     Torrent.destroy(cb)
 ### Parameters
-   **cb**
+   **cb {Function}**
    
    
    The passed cb will be called after the torrent has finished destroying.
@@ -23,7 +23,7 @@ It does setup on Torrent, if metadata is not already set.
     _onMetadata(metadata)
 
 ### Parameters
-  **metadata** is either a parsed(decoded) .torrent file or a unparsed(encoded) .torrent file
+  **metadata {Object}** is either a parsed(decoded) .torrent file or a unparsed(encoded) .torrent file
   
    [parse-torrent module](https://github.com/feross/parse-torrent)|[torrent-file](https://en.wikipedia.org/wiki/Torrent_file)   
    
