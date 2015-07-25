@@ -7,13 +7,15 @@
    **start {number}**
    
    
-   The index at the storage [pieces](https://github.com/feross/webtorrent/blob/master/lib/storage.js#L36) array to start        selecting from.
+   The index at the storage [pieces](https://github.com/feross/webtorrent/blob/master/lib/storage.js#L36) array to match the 
+   selection object start.
    
    
    **end {number}**
    
    
-   The index at the storage [pieces](https://github.com/feross/webtorrent/blob/master/lib/storage.js#L36) array to end          selecting from.
+   The index at the storage [pieces](https://github.com/feross/webtorrent/blob/master/lib/storage.js#L36) to match the 
+   selection object end.
    
    
    **priority {number}**
