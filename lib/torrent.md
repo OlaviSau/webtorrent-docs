@@ -1,3 +1,30 @@
+# Torrent.prototype.addWebSeed()
+ Add a web seed to the swarm
+
+### Syntax
+    Torrent.addWebSeed(url)
+### Parameters
+   **url {String}**
+   
+   
+   The url for the webseed. Example Soon™
+### Description
+Calls the [bittorrent-swarm's addWeebSeed()](https://github.com/feross/bittorrent-swarm/blob/master/index.js#L163) method with the passed url and [torrent.parsedTorrent](https://github.com/feross/parse-torrent/blob/master/index.js).
+### Examples
+# Torrent.prototype.addPeer()
+Add a peer to the swarm
+
+### Syntax
+    Torrent.addPeer(peer)
+### Parameters
+   **peer {String|[simplePeer](https://github.com/feross/simple-peer/blob/master/index.js)}**
+   
+   
+   The peer will be added to the swarm.
+### Description
+Returns true if the peer was added false if it was not. Checks if the peer is blocked, if it's not blocked, adds it to the swarm.
+### Examples
+
 # Torrent.prototype.destroy()
 Destroys and cleans up this torrent.
 
