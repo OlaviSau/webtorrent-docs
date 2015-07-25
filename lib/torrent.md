@@ -1,10 +1,38 @@
+# Torrent.prototype.select()
+ Select a range of pieces to prioritize.
+
+### Syntax
+    Torrent.select(start,end,priority,notify)
+### Parameters
+   **start {number}**
+   
+   
+   The index at the storage [pieces](https://github.com/feross/webtorrent/blob/master/lib/storage.js#L36) array to start        selecting from.
+   
+   
+   **end {number}**
+   
+   
+   The index at the storage [pieces](https://github.com/feross/webtorrent/blob/master/lib/storage.js#L36) array to end          selecting from.
+   
+   
+   **priority {number}**
+   
+   The priority that selected pieces will be given.
+   **notify {function}**
+   
+   The callback when the selection is updated with new data.
+   
+### Description
+
+### Examples
 # Torrent.prototype.addWebSeed()
  Add a web seed to the swarm
 
 ### Syntax
     Torrent.addWebSeed(url)
 ### Parameters
-   **url {String}**
+   **url {string}**
    
    
    The url for the webseed. Example Soon™
@@ -31,7 +59,7 @@ Destroys and cleans up this torrent.
 ### Syntax
     Torrent.destroy(cb)
 ### Parameters
-   **cb {Function}**
+   **cb {function}**
    
    
    The passed cb will be called with node-parallel after the torrent has finished destroying.
@@ -50,7 +78,7 @@ It does setup on Torrent, if metadata is not already set.
     _onMetadata(metadata)
 
 ### Parameters
-  **metadata {Object}** is either a parsed(decoded) .torrent file or a unparsed(encoded) .torrent file
+  **metadata {object}** is either a parsed(decoded) .torrent file or a unparsed(encoded) .torrent file
   
    [parse-torrent module](https://github.com/feross/parse-torrent)|[torrent-file](https://en.wikipedia.org/wiki/Torrent_file)  
    
