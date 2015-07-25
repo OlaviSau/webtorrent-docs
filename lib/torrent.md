@@ -7,7 +7,7 @@ Destroys and cleans up this torrent.
    **cb {Function}**
    
    
-   The passed cb will be called after the torrent has finished destroying.
+   The passed cb will be called with node-parallel after the torrent has finished destroying.
 ### Description
 Sets the destroyed flag to true, removes it from client, clears reChokeInterval, cleans up blobURL's, closes the servers,
 destroys the swarms,stops the discovery and closes the storage for this torrent, **this does not clean up the storage**. Then calls the callback.
