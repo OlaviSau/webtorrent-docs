@@ -11,5 +11,8 @@ I have tried to use the style on MDN for familiarity
 https://developer.mozilla.org/en-US/docs/Web
 
 
-Soft-Documentation for feross/webtorrent
+Soft-Documentation for feross/webtorrent 
+
+
+Current version 0.53.3
 
