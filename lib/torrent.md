@@ -52,7 +52,7 @@ It does setup on Torrent, if metadata is not already set.
 ### Parameters
   **metadata {Object}** is either a parsed(decoded) .torrent file or a unparsed(encoded) .torrent file
   
-   [parse-torrent module](https://github.com/feross/parse-torrent)|[torrent-file](https://en.wikipedia.org/wiki/Torrent_file)   
+   [parse-torrent module](https://github.com/feross/parse-torrent)|[torrent-file](https://en.wikipedia.org/wiki/Torrent_file)  
    
 ### Description
  Sets the torrent.metadata 
