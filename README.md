@@ -7,6 +7,8 @@ You can find some descriptions for feross's webtorrent project,but you should be
 #### On style
 I have tried to use the style on MDN for familiarity
 
+#### On updates
+I'll try to add some documentation every day, perhaps I'll write a small guide, but this is unlikely since my time resources will be limited in the near future.
 
 https://developer.mozilla.org/en-US/docs/Web
 
