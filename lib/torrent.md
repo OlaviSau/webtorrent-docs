@@ -1,3 +1,20 @@
+# Torrent.prototype.destroy()
+Destroys and cleans up this torrent.
+
+### Syntax
+    Torrent.destroy(cb)
+### Parameters
+   **cb**
+   
+   
+   The passed cb will be called after the torrent has finished destroying.
+### Description
+Sets the destroyed flag to true, removes it from client, clears reChokeInterval, cleans up blobURL's, closes the servers,
+destroys the swarms,stops the discovery and closes the storage for this torrent, **this does not clean up the storage**. Then calls the callback.
+
+### Examples
+
+
 # Torrent._onMetadata()
 _onMetadata is called when the metadata is received.
 It does setup on Torrent, if metadata is not already set.
