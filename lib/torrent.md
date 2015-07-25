@@ -24,7 +24,7 @@
    The callback when the selection is updated with new data.
    
 ### Description
-
+Makes sure the parameters are valid, then updates selections.
 ### Examples
 # Torrent.prototype.addWebSeed()
  Add a web seed to the swarm
