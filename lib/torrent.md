@@ -10,7 +10,7 @@
    The opts to create the server with.
    
 ### Description
-Creates a server with the options and pushes it to the _servers array.
+Creates a new server with the options and pushes it to the _servers array.
 ### Examples
 # Torrent.prototype.critical()
  Marks a range of pieces as critical priority to be downloaded ASAP.
