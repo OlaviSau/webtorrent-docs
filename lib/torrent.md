@@ -1,3 +1,24 @@
+# Torrent.prototype.critical()
+ Marks a range of pieces as critical priority to be downloaded ASAP.
+
+### Syntax
+    Torrent.critical(start,end)
+### Parameters
+   **start {number}**
+   
+   
+   The index at the storage [pieces](https://github.com/feross/webtorrent/blob/master/lib/storage.js#L36) array to start        selecting from.
+   
+   
+   **end {number}**
+   
+   
+   The index at the storage [pieces](https://github.com/feross/webtorrent/blob/master/lib/storage.js#L36) array to end          selecting from.
+   
+   
+### Description
+Adds the range on pieces to the array which hold pieces to be downloaded first.
+### Examples
 # Torrent.prototype.deselect()
  Deprioritizes a range of previously selected pieces.
 
