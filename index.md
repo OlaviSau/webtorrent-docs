@@ -23,3 +23,21 @@
 ### Description
 Adds a new torrent to the client.
 ### Examples
+# WebTorrent.prototype.get()
+
+ Returns the torrent with the given `torrentId`.Convenience method.
+
+### Syntax
+    WebTorrent.get(torrentId)
+### Parameters
+ **torrentId  {string|[buffer](https://github.com/feross/buffer/blob/master/index.js)|[torrent](https://github.com/OlaviSau/webtorrent-docs/edit/master/lib/torrent.md)}**
+ 
+ The torrent to get.
+ 
+
+### Description
+Adds a new torrent to the client.
+### Examples
+ Returns the torrent with the given `torrentId`.Convenience method. Easier than
+ searching through the `client.torrents` array. Returns `null` if no matching torrent
+ found.
