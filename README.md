@@ -10,6 +10,8 @@ I have tried to use the style on [MDN](https://developer.mozilla.org/en-US/docs/
 #### On updates
 I'll try to add some documentation every day, perhaps I'll write a small guide, but this is unlikely since my time resources will be limited in the near future.
 
+#### On things you want to know
+[torrent-file](https://en.wikipedia.org/wiki/Torrent_file)  
 
 Soft-Documentation for feross/webtorrent 
 
