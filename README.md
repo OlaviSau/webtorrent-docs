@@ -4,7 +4,7 @@ Hello, welcome to my humble documentation page :)
 You can find some descriptions for feross's webtorrent project,but you should be careful as to use this repo as a definite source of documentation for his project.
 
 #### On resources
-I use ferosses own documentation that you can find in his code and [readme](https://github.com/feross/webtorrent/blob/master/README.md)(it's good).
+I use ferosses own documentation that you can find in his code and [readme](https://github.com/feross/webtorrent/blob/master/README.md)(it's good). Rest is just written by reading the code.
 
 #### On why
 It's more for me to understand his project indepth.
