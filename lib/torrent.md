@@ -140,9 +140,9 @@ It does setup on Torrent, if metadata is not already set.
     _onMetadata(metadata)
 
 ### Parameters
-  **metadata {object}** is either a parsed(decoded) .torrent file or a unparsed(encoded) .torrent file
+  **metadata {[parsed-torrent(https://github.com/feross/parse-torrent)|[torrent](https://github.com/OlaviSau/webtorrent-docs/edit/master/lib/torrent.md)}** 
   
-   [parse-torrent module](https://github.com/feross/parse-torrent)|[torrent-file](https://en.wikipedia.org/wiki/Torrent_file)  
+ The received metadata
    
 ### Description
  Sets the torrent.metadata, adds the event listeneners and attempts to verify if the verify opts is set to true on torrent.
