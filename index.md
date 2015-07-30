@@ -3,7 +3,7 @@
  Start downloading a new torrent. Aliased as `WebTorrent.download`.
 
 ### Syntax
-    WebTorrent.add(torrentId,opts,onTorrent) WebTorrent.download(torrentId,opts,onTorrent)
+    WebTorrent.add(torrentId,[opts],onTorrent) WebTorrent.download(torrentId,opts,onTorrent)
 ### Parameters
  **torrentId  {string|[buffer](https://github.com/feross/buffer/blob/master/index.js)|[torrent](https://github.com/OlaviSau/webtorrent-docs/edit/master/lib/torrent.md)}**
  
@@ -21,7 +21,27 @@
    The cb to be called after the function finishes.
    
 ### Description
+torrentId can be one of:
+
+magnet uri (string)
+torrent file (buffer)
+info hash (hex string or buffer)
+parsed torrent (from parse-torrent)
+http/https url to a torrent file (string)
+filesystem path to a torrent file (string)
 Adds a new torrent to the client.
+
+If opts is specified, then the default options (shown below) will be overridden.
+
+    {
+      announce: [],    // List of additional trackers to use (added to list in .torrent or magnet uri)
+      path: String,    // Folder where files will be downloaded (default=`/tmp/webtorrent/`)
+      verify: Boolean  // Verify previously stored data before starting (default=false)
+    }
+
+If ontorrent is specified, then it will be called when this torrent is ready to be used (i.e. metadata is available). Note: this is distinct from the 'torrent' event which will fire for all torrents.
+
+If you want access to the torrent object immediately in order to listen to events as the metadata is fetched from the network, then use the return value of client.add. If you just want the file data, then use ontorrent or the 'torrent' event.
 ### Examples
 # WebTorrent.prototype.get()
 
