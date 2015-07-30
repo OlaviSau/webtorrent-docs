@@ -45,7 +45,7 @@ Returns the torrent with the given `torrentId`.Convenience method. Easier than
  Start seeding a new file/folder.
 
 ### Syntax
-    WebTorrent.seed(input, opts, onseed)
+    WebTorrent.seed(input, opts, onSeed)
 ### Parameters
  **input  {string|[file](https://developer.mozilla.org/en/docs/Web/API/File)|[fileList](https://developer.mozilla.org/en-US/docs/Web/API/FileList)|[buffer](https://github.com/feross/buffer/blob/master/index.js)|Array.&#60;string|[file](https://developer.mozilla.org/en/docs/Web/API/File)|[buffer](https://github.com/feross/buffer/blob/master/index.js)&#62;}**
  
@@ -57,12 +57,51 @@ Returns the torrent with the given `torrentId`.Convenience method. Easier than
  The options to create the torrent with.String takes the file from filesystem
  
  
-   <b>onTorrent {function }</b>
+   <b>onSeed {function }</b>
    
    
-   The cb to be called after the method.
+   The cb to be called after the method completes.
    
 ### Description
 Adds a new Torrent to the client(WebTorrent). Pushes it to the DHT. Emits 'seed'. TODO:Write better docs ^^
+### Examples
+ Soon.
+# WebTorrent.prototype.remove()
+
+ Remove a torrent from the client.
+
+### Syntax
+    WebTorrent.remove(torrentId,onRemove)
+### Parameters
+ **torrentId  {string|[buffer](https://github.com/feross/buffer/blob/master/index.js)|[torrent](https://github.com/OlaviSau/webtorrent-docs/edit/master/lib/torrent.md)}**
+ 
+ The torrent to remove.
+ 
+ 
+   <b>onRemove {function }</b>
+   
+   
+   The cb to be called after the method completes.
+   
+### Description
+Removes a torrent from the WebTorrent(client), does cleanup. Files are not deleted.
+### Examples
+ Soon.
+# WebTorrent.prototype.destroy()
+
+ Destroy the client, including all torrents and connections to peers.
+
+### Syntax
+    WebTorrent.destroy(callback)
+### Parameters
+
+ 
+   <b>onDestroy {function }</b>
+   
+   
+   The cb to be called on every destroy.??? Clarify this.
+   
+### Description
+Destroy the client, including all torrents and connections to peers.
 ### Examples
  Soon.
